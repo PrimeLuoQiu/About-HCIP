@@ -20,7 +20,7 @@ HCIA - WLAN 8%
 
 HCIA - Security 新建文件夹 (ૢ˃ꌂ˂ૢ)
 
-HCIP - Datacom Network Automation Developer V1.0 新建文件夹中...
+HCIP - Datacom Network Automation Developer V1.0 3% 10.28 0:51更新~
 
 
 
