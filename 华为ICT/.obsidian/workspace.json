@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "ed9ed36482af41ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "d247f36d3436fd27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc852a1570fb9993",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "487a0f76c9d30758",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "68337731dbb3fbb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fd904ce8dcd467b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2467ea6606ce5887",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dcd17d54e56c680b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "77f27f9b21620e6f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "a21e0997ed8a67c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ff44bff65f72d89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77247975ff44187f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "3db6a126fa5736cb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "852de0a3c3e659c4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bdb3b76958316f85",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "dc852a1570fb9993",
+  "lastOpenFiles": [
+    "Pasted image 20241027205126.png",
+    "Pasted image 20241026134330.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027173842.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027173704.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027173503.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027173144.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027172921.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027172738.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027172624.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027172214.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027172143.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/新建文件夹",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md"
+  ]
+}
