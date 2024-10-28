@@ -16,11 +16,19 @@
 
 HCIA - Datacom V1.0 - 100% 
 
-HCIA - WLAN 8%
+HCIA - WLAN 10% 10.28 21:06 更新~
 
 HCIA - Security 新建文件夹 (ૢ˃ꌂ˂ૢ)
 
 HCIP - Datacom Network Automation Developer V1.0 3% 10.28 0:51更新~
+
+
+
+10.28：
+
+小累，似乎有点感冒 暂作休息 效率不高 可能是穿的有点薄，再加上换季和最近的熬夜...
+
+今晚尽量不熬夜了，早点休息吧~
 
 
 

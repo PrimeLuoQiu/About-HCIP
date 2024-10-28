@@ -16,7 +16,23 @@
                 "file": "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/Chapter1.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Chapter1"
+            }
+          },
+          {
+            "id": "e2678ac1d7237086",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter1 WLAN技术基础"
             }
           },
           {
@@ -24,10 +40,13 @@
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -47,7 +66,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -62,7 +83,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -70,7 +93,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -93,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/Chapter1.md",
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +126,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Chapter1 WLAN技术基础 的反向链接列表"
             }
           },
           {
@@ -110,10 +137,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/Chapter1.md",
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Chapter1 WLAN技术基础 的出链列表"
             }
           },
           {
@@ -124,7 +153,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -133,16 +164,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/Chapter1.md"
-              }
+                "file": "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md"
+              },
+              "icon": "lucide-list",
+              "title": "Chapter1 WLAN技术基础 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,21 +187,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dc852a1570fb9993",
+  "active": "e2678ac1d7237086",
   "lastOpenFiles": [
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027205126.png",
-    "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/ScreenShot/Pasted image 20241028004932.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028203412.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028202433.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028200917.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028200859.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028200801.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028165255.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028115930.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028111323.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028111059.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028104239.png",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028205821.png",
     "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/Chapter1.md",
-    "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/ScreenShot/Pasted image 20241028005033.png",
-    "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/ScreenShot/Pasted image 20241028003836.png",
-    "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/ScreenShot/Pasted image 20241028004325.png",
-    "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/ScreenShot/Pasted image 20241028003417.png",
     "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/ScreenShot",
     "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
-    "Pasted image 20241026134330.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027173842.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027173704.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241027173503.png",
     "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot",
     "HCIA-WLAN V3.0 华为认证无线局域网工程师/新建文件夹"
   ]
