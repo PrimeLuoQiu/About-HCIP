@@ -102,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a21e0997ed8a67c0",
@@ -189,20 +190,21 @@
   },
   "active": "e2678ac1d7237086",
   "lastOpenFiles": [
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028203412.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028202433.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028200917.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028200859.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028200801.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028165255.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028115930.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028111323.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028111059.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028104239.png",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot/Pasted image 20241028205821.png",
+    "Pasted image 20241030184859.png",
+    "Pasted image 20241030184831.png",
+    "Pasted image 20241030184141.png",
+    "Pasted image 20241030184055.png",
+    "Pasted image 20241030183339.png",
+    "Pasted image 20241030183133.png",
+    "Pasted image 20241030183122.png",
+    "Pasted image 20241030182424.png",
+    "Pasted image 20241030182355.png",
+    "Pasted image 20241030181934.png",
+    "Pasted image 20241030180959.png",
+    "HCIA-Security V4.0 华为认证安全工程师/Chapter1.md",
+    "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
     "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/Chapter1.md",
     "HCIP-Datacom-Network Automation Developer V1.0 华为数通网络自动化开发工程师/ScreenShot",
-    "HCIA-WLAN V3.0 华为认证无线局域网工程师/Chapter1 WLAN技术基础.md",
     "HCIA-WLAN V3.0 华为认证无线局域网工程师/ScreenShot",
     "HCIA-WLAN V3.0 华为认证无线局域网工程师/新建文件夹"
   ]
