@@ -1,4 +1,4 @@
-
+  
 ## 企业WLAN概述
 WLAN -> Wireless LAN 无线技术构建的无线局域网络
 无线技术不止Wifi，还有红外、蓝牙、ZigBee等 可以让用户方便的接入到无线网络
@@ -372,3 +372,174 @@ MIMO
 - TWT分为单播TWT和广播TWT
 	- 单播是指TWT请求站点(TWT Requesting STA，简称请求站点)向TWT应答站点发送TWT请求消息，请求设定一个醒来的时间；应答站点在接收到TWT请求消息之后向请求站点发送TWT应答消息，交互成功后，请求站点与应答站点之间就建立了一个TWT协议。
 	- 广播TWT提供了一种“批量管理”机制，AP可以与多个STA建立一系列周期性出现的TWT服务阶段，在服务阶段中，上述多个STA需要保持活跃状态，从而与AP进行通信。AP 可以在 Beacon 帧中携带一个或多个 广播 TWT 的信息，每个广播 TWT 是由一个广播 TWT 标识符和 AP 的 MAC 地址共同表示的。STA 在收到 Beacon 帧后，如果有加入广播 TWT 的意愿， 可以向 AP 发送广播 TWT 建立请求消息，从而加入广播 TWT。在广播 TWT 建 立时，需要指定广播 TWT 标识符来请求加入某个特定的广播 TWT。加入广播 TWT 之后，STA 可以按照 TWT 参数集所指示的服务阶段唤醒，从而与 AP 进 行通信。需要说明的是，若 STA 支持广播 TWT，但没有显式地加入某个广播 TWT ID，则默认参与广播 TWT 标识符为 0 的广播 TWT。
+
+## WLAN基本概念
+### BSS和BSA
+![[Pasted image 20241031112724.png]]
+手机，电脑，AP组成的单元叫做基本服务集
+AP的覆盖范围叫做一个BSA
+![[Pasted image 20241031112839.png]]
+SSID是一个无线网络身份标识
+BSSID是一个AP的身份标识 MAC地址
+### VAP
+![[Pasted image 20241031112945.png]]
+一个物理AP虚拟出来多个AP
+### DS
+![[Pasted image 20241031113031.png]]
+BSS的分布式系统 解决多AP对应一个SSID的问题
+### ESS
+![[Pasted image 20241031113155.png]]
+两个BSS组成一个ESS 扩展BSS范围的方式叫做ESS Extend Service Set 以BSS为单位自由组合 让WLAN部署变得灵活
+两个独立BSS的AP一定要连接到同一个分布式系统、两个基本服务集的SSID一定要相同、两个BSS要有重复的覆盖范围 组成ESS三个必要条件
+### 总结
+![[Pasted image 20241031113416.png]]
+## WLAN组网架构
+### FAT-AP架构
+![[Pasted image 20241031113554.png]]
+部署方便 覆盖80平米ok 很难满足企业要求 多部署 人力部署麻烦
+### AC+FIT AP架构
+![[Pasted image 20241031113652.png]]
+安全性：软件和更新在AC进行 数字签名认证 加了很多安全特性
+### AC+FIT AP组网介绍
+![[Pasted image 20241031113817.png]]
+#### 组网
+##### 二层组网和三层组网
+![[Pasted image 20241031113945.png]]
+同一个广播域                                                            不在同一个广播域
+小园区                                                                        大园区
+##### 直连组网和旁挂组网
+![[Pasted image 20241031120441.png]]
+当AP发送数据出去的时候，一定会经过AC               AP数据不经过AC
+当有线和无线同时部署的时候，AC既要负责有限的数据，还要负责无限的数据，压力会比较大 混合不是直连 只有无线的话直连是可以的
+
+中小型适合直连，大型适合旁挂
+##### CAPWAP协议介绍
+![[Pasted image 20241031150540.png]]
+跑控制信息和用户数据
+分两种 数据隧道和控制隧道
+##### 直接转发
+![[Pasted image 20241031150725.png]]
+数据直接转发，不经过AC AC负担小
+##### 隧道转发 
+用户数据先通过隧道进入AC，再由AC进行集中转发
+![[Pasted image 20241031150847.png]]
+##### AC+FIT AP组网特点对比
+![[Pasted image 20241031150932.png]]
+#### 规划
+##### VLAN规划
+![[Pasted image 20241031151044.png]]
+###### 业务VLAN与SSID的映射关系
+![[Pasted image 20241031151201.png]]
+![[Pasted image 20241031151248.png]]
+左侧不推荐 右侧用的更多
+##### IP地址规划
+![[Pasted image 20241031151419.png]]这三部分需要重点考虑
+1. 二层组网接口地址 三层组网使用接口地址或者LoopBack地址
+2. AC的源一定要和AP的管理地址能够通信 三层组网还要配置一个Option ，让AP能够去发现AC源
+3. 终端可以和有线一样去分配
+#### 可靠性
+##### AC可靠性
+为什么需要可靠性？
+###### AC单点故障![[Pasted image 20241031152024.png]]
+那怎么办呢？再增加一个AC，实现AC可靠性
+![[Pasted image 20241031152113.png]]
+主备AC对外显示成为一个逻辑设备，但实际上有两台设备，至于主AC挂掉之后备用AC上线的时间依靠VRRP实现
+不支持负载分担 业务切换速度快
+![[Pasted image 20241031152241.png]]
+建立两条隧道 主备AC通过优先级确认 可以进行负载分担 切换速度也很快 都是热备 保证业务不中断
+能否做热备：当切换到备用上的时候，它是否有AP以及用户信息，决定了是否能够做热备 没有的话需要重新注册 那么很有可能导致业务中断
+那么这里如何同步呢，通过AC之间的HSB同步AP和STA之间的信息
+![[Pasted image 20241031152631.png]]
+![[Pasted image 20241031152653.png]]
+###### 小结
+![[Pasted image 20241031152735.png]]
+##### 业务可靠性
+###### 本地转发CAPWAP断链业务保持
+![[Pasted image 20241031152850.png]]
+已在线业务不会中断 前提 保证不经过AC才可以 当数据转发为本地转发的话  才支持断链业务保持 支持简单的用户上线  不支持11ax的一些复杂的方式 可以在AP上控制
+有AC可靠性完全不用考虑
+###### 广域逃生
+![[Pasted image 20241031153201.png]]
+### 云管理架构
+![[Pasted image 20241031153336.png]] 云AP上线后可以自动连接到指定的云管理平台，加载指定的配置文件等一系列，实现云AP零配置上线以及云平台下方到对应AP的更新和升级以及配置
+### Leader AP架构
+![[Pasted image 20241031153526.png]]
+只有AP的情况 和AC类似 小微企业 
+### 组网架构对比
+![[Pasted image 20241031153645.png]]
+### 下一代组网架构：智简园区(Cloud Campus)
+![[Pasted image 20241031153755.png]]
+#### 方案亮点
+![[Pasted image 20241031153847.png]]
+#### iMaster-NCE
+![[Pasted image 20241031153907.png]]
+## WLAN典型组网方案
+### 大型园区方案
+![[Pasted image 20241031154058.png]]
+核心层接入AC 接入层接入AP
+### 敏捷分布式方案
+![[Pasted image 20241031154133.png]]
+基于AC+FITAp架构 室内分布式AP延伸而来 
+远端单元不占用License 省钱 部署在宿舍酒店房间密集型产业 
+中心和远端不是用馈线，而是用网线
+花了一个license的钱 管理简单 覆盖距离由中心AP决定 100m
+### 中小型连锁门店方案
+![[Pasted image 20241031154446.png]]
+## WLAN工作原理
+### CAPWAP隧道
+#### CAPWAP协议背景
+![[Pasted image 20241031212633.png]]
+指Control and Provisioning of Wireless Access Points 
+需要一个机制让各大不同厂商标准统一化，这就是CAPWAP的基础
+#### CAPWAP基础
+![[Pasted image 20241031212831.png]]
+由四大厂商形成的CAPWAP协议
+![[Pasted image 20241031212930.png]]
+#### CAPWAP协议介绍
+![[Pasted image 20241031212955.png]]
+做AP管理和配置 监管 下发数据
+终端也可以用CAPWAP隧道来转化数据
+#### CAPWAP基本报文格式
+![[Pasted image 20241031213130.png]]
+DTLS对内容进行一个加密和保护
+#### CAPWAP隧道建立-总体视图
+![[Pasted image 20241031213203.png]]
+	1.DHCP 获取IP地址 AP
+	2.AP找AC 发现AC 广播
+	3,DTLS加密
+	4.AP申请加入AC 认证机制 MAC默认
+	5.比对软件版本匹配 不一致就请求下方
+	6.检查配置文件 记录结果
+	7.检查一下是否有错误报文
+	8.数据隧道建立 数据用Keepalive报文维护 控制用Echo Request和Response来维护
+	9.AC給AP发配置用来更新
+##### AP获取IP地址
+![[Pasted image 20241031214235.png]]
+###### DHCP 交互
+![[Pasted image 20241031214315.png]]
+#### AC发现阶段
+![[Pasted image 20241031214522.png]]
+Option 15/43 用来在三层告诉对方AC的IP地址 一般用43 单播报文
+#### AP动态发现AC
+![[Pasted image 20241031214657.png]]
+#### DLTS阶段
+![[Pasted image 20241031214726.png]]
+是否需要加密传输UDP报文来决定的 需要的话，报文就会加上一个DTLS的头部 还有尾部两个报文
+#### Join阶段
+![[Pasted image 20241031214842.png]]
+##### AP接入流程
+![[Pasted image 20241031214921.png]]
+MAC地址需要手动确认和手动添加的
+#### Image Data阶段
+![[Pasted image 20241031215048.png]]
+在这里要根据协商的参数判断是否是最新版本 不是的话就更新软件版本 更新完会重复上述阶段 版本一致直接跳过
+#### Config&DataCheck阶段
+![[Pasted image 20241031215213.png]]
+#### Run阶段
+![[Pasted image 20241031215300.png]]
+通常时间下 数据报文 25s发送一次 死亡时间是6次 150s
+#### 配置下发阶段
+![[Pasted image 20241031215439.png]]
+### WLAN关键报文
+### STA上线流程
+### WLAN用户漫游
