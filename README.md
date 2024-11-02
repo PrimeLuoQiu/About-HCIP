@@ -48,6 +48,10 @@ HCIP - Datacom Network Automation Developer V1.0 3% 10.28 0:51更新~
 
 加油啊
 
+11.2
+
+更新了WLAN Chapter1 Part12 结束了Chapter1 ...时间似乎有点长了 17:46
+
 
 
 持续更新...
