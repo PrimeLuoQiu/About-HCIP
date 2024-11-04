@@ -87,3 +87,56 @@
 ![[Pasted image 20241103193558.png]]
 
 ## WLAN安全配置
+### 配置开放认证
+![[Pasted image 20241104100347.png]]
+- Security open
+	- 指定WEP认证方式为开放模式
+
+### 配置WEP安全策略
+![[Pasted image 20241104101427.png]]
+- Security wep 指定wep认证方式为共享密钥模式
+- Security wep share-key 指定wep认证方式为共享密钥模式时
+	- 配置该参数 表示使用密钥对无线终端认证，并对业务报文加密。
+	- 不配置表示仅使用共享密钥对业务报文加密
+- 无论该参数是否配置，无线终端上的设置都相同，需要输入共享密钥
+- Security wep dynamic 指定WEP认证方式为动态WEP方式
+- wep key命令
+	- key-id 密钥索引
+	- wep-40 使用wep-40方式认证
+	- pass-phrase 密钥短语
+	- hex 16进制
+	- key-value 以密文形式显示用户口令
+### 配置WPA/WPA2-PSK认证
+![[Pasted image 20241104101907.png]]
+- wpa 使用wpa WiFi网络安全存取版本1 认证方式
+- wpa2 使用wpa2 认证方式
+- psk 采用psk
+- pass-pharse 密钥短语
+- hex 16进制数
+- key-value 用户口令
+- aes 使用aes 对称加密算法 方式加密数据
+- tkip 临时秘钥完整性协议
+- aes-tkip 混合加密 支持aes或tkip 通过后即可使用支持的算法加密数据
+
+### 配置WPA/WPA2-PPSK认证
+![[Pasted image 20241104103158.png]]
+- pass-phrase 密钥短语
+- hex 16进制数
+- key-value 以密文形式显示用户口令
+- user-name user-name 指定PPSK用户的用户名‘
+	- 创建PPSK用户时如果不指定user-name 则自动生成用户名ppsk_auto_user_xxx，xxx表示数字编号。如果指定user-name，则必须保证用户名的唯一性
+- user-group user-group 指定PPSK用户绑定的用户组
+- vlan vlan-id 指定PPSK用户绑定的授权VLAN
+- expire-date expire-date[]:指定PPSK用户的过期时间，超过规定日期的用户无法接入，如果不指定该参数则有效期到2099年12月31日
+- max-device max-device number 指定允许接入的最大用户
+- mac-address 指定PPSK用户绑定的MAC地址
+- ssid 指定PPSK用户接入的SSID
+### 案例：PSK和PPSK
+![[Pasted image 20241104103914.png]]
+![[Pasted image 20241104103905.png]]
+#### 创建安全模板
+![[Pasted image 20241104103941.png]]
+#### 绑定模板
+![[Pasted image 20241104103951.png]]
+#### 查看AP信号信息
+![[Pasted image 20241104104035.png]]

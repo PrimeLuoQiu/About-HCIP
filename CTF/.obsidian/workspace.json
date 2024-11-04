@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "fc362662c6fc5c53",
+    "type": "split",
+    "children": [
+      {
+        "id": "a97129a86153b20f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "279e6b66d508fae1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MISC/11.3 刷题日志.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11.3 刷题日志"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7866320fd194f5eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e659d9ccdac481d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa4dea8622345639",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "3d4bf90138b11a40",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "252ad7b7b641df52",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c973d16a40883588",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ecb910606aadc9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb8a2bf57554df89",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MISC/11.3 刷题日志.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "11.3 刷题日志 的反向链接列表"
+            }
+          },
+          {
+            "id": "e449c0fab27d08a3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MISC/11.3 刷题日志.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "11.3 刷题日志 的出链列表"
+            }
+          },
+          {
+            "id": "afeaa883d33ff108",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "186d57c1238c0215",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MISC/11.3 刷题日志.md"
+              },
+              "icon": "lucide-list",
+              "title": "11.3 刷题日志 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "279e6b66d508fae1",
+  "lastOpenFiles": [
+    "题库附件/MISC/goroot.pcap",
+    "Pasted image 20241103201155.png",
+    "Chapter0 QuickStart.md",
+    "MISC/11.3 刷题日志.md",
+    "MISC",
+    "题库附件/MISC/Good.pcapng",
+    "题库附件/MISC",
+    "题库附件/签到",
+    "题库附件",
+    "签到"
+  ]
+}
